@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ</title>
+    <style>
+        body{
+            background-color: #42e6d8;
+        }
+        p {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // 大吉・吉・中吉・小吉・末吉・凶・大凶
+        let kujis = ['大吉', '吉', '中吉', '小吉', '末吉', '凶', '大凶'];
+        // console.log(kujis[0]);
+        let kuji = Math.floor(Math.random() * 7);
+        // console.log(kuji);
+        document.write('<p>あなたの今年の運勢は, ' + kujis[kuji]  + ' です</p>')
+    </script>
+</body>
+</html>
